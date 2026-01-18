@@ -30,8 +30,18 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
+  display: inline;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -198,7 +208,7 @@ img {
 
 .typewriter {
   margin-bottom: 20px;
-  animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp ease forwards;
   animation-delay: 0.6s;
   opacity: 0;
 }
@@ -211,7 +221,7 @@ img {
 }
 
 .typed-text::after {
-  content: "|";
+  content: "👨‍💻";
   animation: blink 1s infinite;
   margin-left: 5px;
 }
@@ -324,7 +334,7 @@ img {
 
 .image-wrapper img {
   width: 320px;
-  height: 420px;
+  height: 500 px;
   object-fit: cover;
   border-radius: 30px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -507,7 +517,7 @@ section {
 
 .image-frame img {
   width: 100%;
-  height: 450px;
+  height: 570px;
   object-fit: cover;
   transition: var(--transition);
 }
